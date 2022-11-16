@@ -1,0 +1,32 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<h1>Elementary, my Dier Watson!</h1>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code{
+    List<string> animalEmodji = new List<string>()
+    {
+
+    };
+}
+
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var animal in animalEmodji)
+       {
+           <div class="col-3">
+                <button type="button" class="btn btn-outline-dark">
+                    <h1>@animal</h1>
+                </button>
+           </div>
+       }fore
+    </div>
+
+</div>
