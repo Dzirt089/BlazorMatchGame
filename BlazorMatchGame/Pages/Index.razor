@@ -1,21 +1,15 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
-
-<h1>Elementary, my Dier Watson!</h1>
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
-@code{
-    List<string> animalEmodji = new List<string>()
-    {
-
-    };
-}
-
-
+<style>
+    .container {
+        width:400px;
+    }
+    button {
+        width: 100px;
+        height: 100px
+        font-size: 50px;
+    }
+</style>
 
 <div class="container">
     <div class="row">
@@ -30,3 +24,20 @@
     </div>
 
 </div>
+
+@code{
+    List<string> animalEmodji = new List<string>()
+    {
+        "🐱", "🐱",
+        "🦒", "🦒",
+        "🐮", "🐮",
+        "🐷", "🐷",
+        "🐭", "🐭",
+        "🐻", "🐻",
+        "🦌", "🦌",
+        "🐓", "🐓",
+    };
+}
+
+
+
